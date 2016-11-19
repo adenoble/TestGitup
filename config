@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+	sharedrepository = 2
+[receive]
+	denyNonFastforwards = true
+[remote "CompletePackage"]
+	url = https://github.com/adenoble/MovieProject.git
+	puttykeyfile = ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAhdXQQYrWZ6RCIwPSveDN6HaX1uPSkGGmoqCAVrq5RQIJTOkvqvPi1SeB1Ra4X+XCMM5mAiweyMKJJ2CniSzKPdxTk1xaTn1hJFpHE03+8aqTkZTfQYHzt2jX2FKob2uAtAphhF5+jFyiH0ZRLSe1C/qLg9HtPBiuWRX/19ymAyvzZxSurdaedk4QwrqHjNY2ywL11Zd0ynLnAWmI8h/u/m1BPDtYj9ktHFxOpU6CKIQrrHEoLuRDwTRPqu+vMNSds8HjP8aScw5dS7xSADgni++3Oq1LdOuDFCj/cwH25A/31Y4H5GjetP6HjpkZA9frZk3ihKqGuXQn9OhVeuBckQ== rsa-key-20161114
+	fetch = +refs/heads/*:refs/remotes/CompletePackage/*

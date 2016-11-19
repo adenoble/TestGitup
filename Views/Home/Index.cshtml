@@ -1,0 +1,50 @@
+﻿@model IEnumerable<MovieProject.Models.Movie>
+
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Index";
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Genre List</title>
+   
+         
+    </head>
+<body>
+    <div> 
+
+        <table>
+            <thead>
+                <tr> 
+                <th><h1>@Html.DisplayNameFor(model => model.MovieID)</h1></th>
+                <th><h1>@Html.DisplayNameFor(model => model.Title)</h1></th>
+                </tr>
+                
+            </thead>
+          
+           
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><h3>@Html.DisplayFor(modelitem => item.MovieID)</h3></td>
+
+                    <td>@Html.ActionLink(item.Title, "Browse", new {item.Title })</td>
+
+                </tr>
+                
+
+            }
+
+        </table>
+   
+
+    </div>
+</body>
+</html>
